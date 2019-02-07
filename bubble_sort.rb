@@ -5,10 +5,6 @@ class Bubblesort
     @num_of_iterations = 0
   end
 
-  def sort_status
-    @is_sorted = false
-  end
-
   def sort_array arr
     @arr = arr
     i = 0
