@@ -1,6 +1,5 @@
 
-
-# need an outside loop outside the while loop to iterate arr.length - 1 timess. 
+ 
 class Bubblesort
   
   attr_accessor :is_sorted, :counter
@@ -40,26 +39,3 @@ end
 my_var = Bubblesort.new()
 my_var.sort_array([4, 2, 9, 1, 5, 10, 2, 1])
 
-
-# newarr = [4, 2, 9, 1, 5]
-# newarr[2..4].reverse!
-
-
-# newarr = [1, 2, 4]
-# newarr[0] = newarr[1]
-
-# newarr[1] = newarr[0]
-# puts newarr
-
-# if newarr[0] < newarr[1]
-#   newarr.reverse!
-# end
-# puts newarr
-
-# @arr.each_with_index do |num, index|
-#   puts "#{num} : #{index} "
-  
-#   end
-
-
-# end
