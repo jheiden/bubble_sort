@@ -4,6 +4,11 @@ class Bubblesort
   
   attr_accessor :is_sorted, :counter
 
+  def initialize
+    @shifted = ""
+  end
+
+
   def sort_status
     @is_sorted = false
   end
@@ -12,24 +17,32 @@ class Bubblesort
     @arr = arr
     i = 0
     temp = 0
+
    (arr.length - 1).times do
-    while i < (arr.length - 1) do
-      if arr[i] > arr[i + 1]
-        temp = arr[i]
-        arr[i] = arr[i + 1]
-        arr[i + 1] = temp 
+  
+      orig_array = 
+    # store array in a var
+
+      while i < (arr.length - 1) do
+
+        if arr[i] > arr[i + 1]
+          temp = arr[i]
+          arr[i] = arr[i + 1]
+          arr[i + 1] = temp
+        end
+
+        i += 1
       end
-      i += 1
-      end
-    i = 0
+    # test if stored array == initial stored var
+      i = 0
     end
   puts arr
  
   end
   
-
+# Need some validation to improve performance
   def count_shifts
-    @shifts = 0
+    @shifted = true
 
   end
 
