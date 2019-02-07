@@ -9,7 +9,7 @@ class Bubblesort
     @is_sorted = false
   end
 
-  def sort_array (arr)
+  def sort_array arr
     @arr = arr
     i = 0
     temp = 0
