@@ -7,10 +7,10 @@ class Bubblesort
 
   def sort_array arr
     @arr = arr
-    i = 0
-    temp = 0
-   (arr.length - 1).times do
+    i, temp, x = 0
+    (arr.length - 1).times do
       @num_shifts = 0
+
         while i < (arr.length - 1) do
         if arr[i] > arr[i + 1] then temp = arr[i]
           arr[i] = arr[i + 1]
@@ -19,10 +19,12 @@ class Bubblesort
         end 
           i += 1
       end
+
       break if has_not_shifted
       @num_of_iterations += 1
       i = 0
     end
+    
     puts "Number of iterations = #{@num_of_iterations}"
       return arr
   end
