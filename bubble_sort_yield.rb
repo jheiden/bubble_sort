@@ -1,7 +1,7 @@
 
 # refactored version using a switch statement.
 
-def largest_num arr
+def bubble_sort_using_yield arr
   temp = 0
   (arr.length - 1).times do 
   (arr.length - 1).times do |x|
@@ -17,14 +17,14 @@ def largest_num arr
      arr
 end
 
-x = largest_num(["test", "hej", "aaaaaaaaaa", "m"]) do |left, right|
+x = bubble_sort_using_yield(["test", "hej", "aaaaaaaaaa", "m"]) do |left, right|
   left.length <=> right.length
   # end
 end
 
 
 
-def largest_num arr
+def bubble_sort_using_yield arr
   temp = 0
   
   (arr.length - 1).times do 
@@ -37,7 +37,7 @@ def largest_num arr
      arr
 end
 
-x = largest_num(["test", "hej", "aaaaaaaaaa"]) do |left, right|
+x = bubble_sort_using_yield(["test", "hej", "aaaaaaaaaa"]) do |left, right|
   left.length <=> right.length
   # end
 end
